@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Opening Among Us…</title>
+</head>
+<body>
+
+<p>Opening Among Us…</p>
+
+<script>
+  const url = "amongus://init?servername=Modded_EU&serverport=443&serverip=https%3A%2F%2Fau-eu.duikbo.at&usedtls=false";
+
+  // Auto-attempt
+  window.location.href = url;
+
+  // Fallback if blocked
+  setTimeout(() => {
+    document.body.innerHTML += `
+      <p><a href="${url}">Click here to open Among Us</a></p>
+    `;
+  }, 1200);
+</script>
+
+</body>
+</html>
